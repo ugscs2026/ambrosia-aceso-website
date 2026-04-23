@@ -410,3 +410,89 @@ const translations = {
     footer_disclaimer: '* Suplemen makanan, bukan pengganti ubatan.',
   }
 };
+// ── 补充新 key（v2.0 重构）──
+const extraTranslations = {
+  zh: {
+    hero_eyebrow: '天然保健品',
+    hero_title_1: '源自', hero_title_2: '自然', hero_title_3: '守护健康',
+    hero_cta2: '产品对比',
+    stat1: '天然成分', stat2: '核心植物提取物', stat3: '粒 / 每瓶', stat4: '产品系列',
+    product_line: '产品系列',
+    ambrosia_subtitle_short: '自然可可配方 · 科学体重管理',
+    aceso_subtitle_short: '苹果精华配方 · 科学血糖管理',
+    ambrosia_t1: '希望科学管理体重者', ambrosia_t2: '代谢偏低、容易发胖者',
+    ambrosia_t3: '注重心血管健康者', ambrosia_t4: '追求天然健康生活方式者',
+    aceso_t1: '关注血糖健康者', aceso_t2: '希望控制体重者',
+    aceso_t3: '注重抗衰老者', aceso_t4: '血脂偏高需要调节者',
+    compare_eyebrow: '产品系列', compare_ambrosia_ing: '可可、非洲芒果籽、绿茶',
+    compare_aceso_ing: '苹果汁、丝胶蛋白、肉桂',
+    faq_eyebrow: '常见疑问',
+    footer_tagline: 'Natural · Scientific · Premium',
+    footer_info: '信息', footer_contact: '联系我们',
+  },
+  en: {
+    hero_eyebrow: 'Natural Supplements',
+    hero_title_1: 'From', hero_title_2: 'Nature', hero_title_3: 'For You',
+    hero_cta2: 'Compare',
+    stat1: 'Natural Ingredients', stat2: 'Core Plant Extracts', stat3: 'Tablets / Bottle', stat4: 'Product Lines',
+    product_line: 'Product Line',
+    ambrosia_subtitle_short: 'Natural Cocoa · Scientific Weight Management',
+    aceso_subtitle_short: 'Apple Extract · Scientific Blood Sugar Control',
+    ambrosia_t1: 'Those seeking weight management', ambrosia_t2: 'Slow metabolism individuals',
+    ambrosia_t3: 'Heart health conscious', ambrosia_t4: 'Natural wellness seekers',
+    aceso_t1: 'Blood sugar health conscious', aceso_t2: 'Weight control seekers',
+    aceso_t3: 'Anti-aging focused', aceso_t4: 'Those with elevated blood lipids',
+    compare_eyebrow: 'Our Products', compare_ambrosia_ing: 'Cocoa, African Mango, Green Tea',
+    compare_aceso_ing: 'Apple Juice, Silk Peptide, Cinnamon',
+    faq_eyebrow: 'Questions',
+    footer_tagline: 'Natural · Scientific · Premium',
+    footer_info: 'Info', footer_contact: 'Contact Us',
+  },
+  vi: {
+    hero_eyebrow: 'Thực Phẩm Bổ Sung', hero_title_1: 'Từ', hero_title_2: 'Thiên Nhiên', hero_title_3: 'Cho Bạn',
+    hero_cta2: 'So Sánh', stat1: 'Thành Phần Tự Nhiên', stat2: 'Chiết Xuất Thực Vật', stat3: 'Viên / Lọ', stat4: 'Dòng Sản Phẩm',
+    product_line: 'Dòng Sản Phẩm', ambrosia_subtitle_short: 'Cacao Tự Nhiên · Quản Lý Cân Nặng',
+    aceso_subtitle_short: 'Tinh Chất Táo · Kiểm Soát Đường Huyết',
+    ambrosia_t1: 'Muốn kiểm soát cân nặng', ambrosia_t2: 'Trao đổi chất chậm', ambrosia_t3: 'Quan tâm tim mạch', ambrosia_t4: 'Theo lối sống tự nhiên',
+    aceso_t1: 'Quan tâm đường huyết', aceso_t2: 'Muốn kiểm soát cân nặng', aceso_t3: 'Chú trọng chống lão hóa', aceso_t4: 'Mỡ máu cao',
+    compare_eyebrow: 'Sản Phẩm', compare_ambrosia_ing: 'Cacao, Xoài Châu Phi, Trà Xanh', compare_aceso_ing: 'Nước Táo, Silk Peptide, Quế',
+    faq_eyebrow: 'Câu Hỏi', footer_tagline: 'Tự Nhiên · Khoa Học · Cao Cấp', footer_info: 'Thông Tin', footer_contact: 'Liên Hệ',
+  },
+  th: {
+    hero_eyebrow: 'ผลิตภัณฑ์เสริมอาหาร', hero_title_1: 'จาก', hero_title_2: 'ธรรมชาติ', hero_title_3: 'เพื่อคุณ',
+    hero_cta2: 'เปรียบเทียบ', stat1: 'ส่วนผสมธรรมชาติ', stat2: 'สารสกัดพืช', stat3: 'เม็ด / ขวด', stat4: 'สายผลิตภัณฑ์',
+    product_line: 'สายผลิตภัณฑ์', ambrosia_subtitle_short: 'โกโก้ธรรมชาติ · จัดการน้ำหนัก',
+    aceso_subtitle_short: 'แอปเปิ้ลสกัด · ควบคุมน้ำตาล',
+    ambrosia_t1: 'ต้องการควบคุมน้ำหนัก', ambrosia_t2: 'เมตาบอลิซึมต่ำ', ambrosia_t3: 'ดูแลสุขภาพหัวใจ', ambrosia_t4: 'รักสุขภาพธรรมชาติ',
+    aceso_t1: 'ดูแลน้ำตาลในเลือด', aceso_t2: 'ควบคุมน้ำหนัก', aceso_t3: 'ต้านวัย', aceso_t4: 'ไขมันสูง',
+    compare_eyebrow: 'ผลิตภัณฑ์', compare_ambrosia_ing: 'โกโก้ มะม่วงแอฟริกัน ชาเขียว', compare_aceso_ing: 'น้ำแอปเปิ้ล Silk Peptide อบเชย',
+    faq_eyebrow: 'คำถาม', footer_tagline: 'ธรรมชาติ · วิทยาศาสตร์ · พรีเมียม', footer_info: 'ข้อมูล', footer_contact: 'ติดต่อ',
+  },
+  id: {
+    hero_eyebrow: 'Suplemen Kesehatan', hero_title_1: 'Dari', hero_title_2: 'Alam', hero_title_3: 'Untuk Anda',
+    hero_cta2: 'Bandingkan', stat1: 'Bahan Alami', stat2: 'Ekstrak Tanaman', stat3: 'Tablet / Botol', stat4: 'Lini Produk',
+    product_line: 'Lini Produk', ambrosia_subtitle_short: 'Kakao Alami · Manajemen Berat Badan',
+    aceso_subtitle_short: 'Ekstrak Apel · Kontrol Gula Darah',
+    ambrosia_t1: 'Ingin kelola berat badan', ambrosia_t2: 'Metabolisme lambat', ambrosia_t3: 'Peduli kesehatan jantung', ambrosia_t4: 'Gaya hidup alami',
+    aceso_t1: 'Pantau gula darah', aceso_t2: 'Kontrol berat badan', aceso_t3: 'Fokus anti-penuaan', aceso_t4: 'Lipid darah tinggi',
+    compare_eyebrow: 'Produk Kami', compare_ambrosia_ing: 'Kakao, Mangga Afrika, Teh Hijau', compare_aceso_ing: 'Jus Apel, Silk Peptide, Kayu Manis',
+    faq_eyebrow: 'Pertanyaan', footer_tagline: 'Alami · Ilmiah · Premium', footer_info: 'Info', footer_contact: 'Hubungi',
+  },
+  ms: {
+    hero_eyebrow: 'Suplemen Kesihatan', hero_title_1: 'Dari', hero_title_2: 'Alam', hero_title_3: 'Untuk Anda',
+    hero_cta2: 'Bandingkan', stat1: 'Bahan Semula Jadi', stat2: 'Ekstrak Tumbuhan', stat3: 'Tablet / Botol', stat4: 'Lini Produk',
+    product_line: 'Lini Produk', ambrosia_subtitle_short: 'Koko Semula Jadi · Urus Berat Badan',
+    aceso_subtitle_short: 'Ekstrak Epal · Kawal Gula Darah',
+    ambrosia_t1: 'Urus berat badan', ambrosia_t2: 'Metabolisme perlahan', ambrosia_t3: 'Peduli kesihatan jantung', ambrosia_t4: 'Gaya hidup semula jadi',
+    aceso_t1: 'Pantau gula darah', aceso_t2: 'Kawal berat badan', aceso_t3: 'Fokus anti-penuaan', aceso_t4: 'Lipid darah tinggi',
+    compare_eyebrow: 'Produk Kami', compare_ambrosia_ing: 'Koko, Mangga Afrika, Teh Hijau', compare_aceso_ing: 'Jus Epal, Silk Peptide, Kayu Manis',
+    faq_eyebrow: 'Soalan', footer_tagline: 'Semula Jadi · Saintifik · Premium', footer_info: 'Maklumat', footer_contact: 'Hubungi',
+  }
+};
+
+// 合并 extraTranslations 到 translations
+Object.keys(extraTranslations).forEach(lang => {
+  if (translations[lang]) {
+    Object.assign(translations[lang], extraTranslations[lang]);
+  }
+});

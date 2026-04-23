@@ -1,13 +1,9 @@
-/* Ambrosia 红色主题 */
-.ambrosia-section { background: var(--ambrosia-bg); }
-.ambrosia-circle { background: linear-gradient(135deg, #C0392B, #E74C3C); }
-.ambrosia-tag-badge { background: #fdecea; color: var(--ambrosia); border: 1px solid #f5b7b1; }
-.ambrosia-title { color: var(--ambrosia); border-color: var(--ambrosia); }
-.ambrosia-benefit { background: white; border-left: 4px solid var(--ambrosia); }
-.ambrosia-benefit h4 { color: var(--ambrosia); }
-.ambrosia-benefit p { color: var(--text-light); }
-.ambrosia-box { background: white; border-left: 4px solid var(--ambrosia); }
-.ambrosia-box h3 { color: var(--ambrosia); }
-.ambrosia-brand .brand-circle { background: linear-gradient(135deg, #C0392B, #922B21); }
-.product-intro h2 { color: var(--ambrosia); }
-.ambrosia-section .product-spec { color: var(--ambrosia); }
+/* Ambrosia — 深红金色主题 */
+.ambrosia-section .section-eyebrow { color: #C9784C; }
+.ambrosia-section .section-eyebrow::before { background: #C9784C; }
+.ambrosia-section .divider-gold { background: #C9784C; }
+.ambrosia-section .ingredient-item .ing-num { color: #C9784C; }
+.ambrosia-section .benefit-item:hover { border-color: #C9784C; }
+.ambrosia-section .usage-block { border-color: #C9784C; }
+.ambrosia-section .usage-block h4 { color: #C9784C; }
+.ambrosia-section .target-list-styled li::before { color: #C9784C; }

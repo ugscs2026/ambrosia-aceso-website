@@ -1,13 +1,9 @@
-/* Aceso 绿色主题 */
-.aceso-section { background: var(--aceso-bg); }
-.aceso-circle { background: linear-gradient(135deg, #27AE60, #2ECC71); font-size: 1.5rem; font-style: italic; }
-.aceso-tag-badge { background: #e9f7ef; color: var(--aceso); border: 1px solid #a9dfbf; }
-.aceso-title { color: var(--aceso); border-color: var(--aceso); }
-.aceso-benefit { background: white; border-left: 4px solid var(--aceso); }
-.aceso-benefit h4 { color: var(--aceso); }
-.aceso-benefit p { color: var(--text-light); }
-.aceso-box { background: white; border-left: 4px solid var(--aceso); }
-.aceso-box h3 { color: var(--aceso); }
-.aceso-brand .brand-circle { background: linear-gradient(135deg, #27AE60, #1e8449); }
-.aceso-section .product-intro h2 { color: var(--aceso); }
-.aceso-section .product-spec { color: var(--aceso); }
+/* Aceso — 深绿金色主题 */
+.aceso-section .section-eyebrow { color: #4CA87C; }
+.aceso-section .section-eyebrow::before { background: #4CA87C; }
+.aceso-section .divider-gold { background: #4CA87C; }
+.aceso-section .ingredient-item .ing-num { color: #4CA87C; }
+.aceso-section .benefit-item:hover { border-color: #4CA87C; }
+.aceso-section .usage-block { border-color: #4CA87C; }
+.aceso-section .usage-block h4 { color: #4CA87C; }
+.aceso-section .target-list-styled li::before { color: #4CA87C; }
