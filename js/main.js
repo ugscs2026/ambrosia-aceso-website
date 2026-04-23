@@ -49,3 +49,49 @@ window.addEventListener('scroll', () => {
     link.style.color = isActive ? 'var(--gold)' : '';
   });
 });
+
+// 回到顶部
+(function () {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.setAttribute('aria-label', '回到顶部');
+  btn.innerHTML =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>';
+  Object.assign(btn.style, {
+    position: 'fixed',
+    right: '1.25rem',
+    bottom: '1.25rem',
+    zIndex: '9999',
+    width: '3rem',
+    height: '3rem',
+    border: '2px solid rgba(201, 168, 76, 0.85)',
+    borderRadius: '50%',
+    background: 'linear-gradient(160deg, #e8c96b 0%, #c9a84c 45%, #a0822d 100%)',
+    color: '#1a1508',
+    cursor: 'pointer',
+    boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    opacity: '0',
+    visibility: 'hidden',
+    pointerEvents: 'none',
+    transition: 'opacity 0.3s ease, visibility 0.3s ease',
+    padding: '0',
+  });
+  document.body.appendChild(btn);
+
+  function updateBackToTop() {
+    const show = window.scrollY > 300;
+    btn.style.opacity = show ? '1' : '0';
+    btn.style.visibility = show ? 'visible' : 'hidden';
+    btn.style.pointerEvents = show ? 'auto' : 'none';
+  }
+
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  updateBackToTop();
+
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  });
+})();
