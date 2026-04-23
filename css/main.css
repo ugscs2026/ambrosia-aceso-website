@@ -85,9 +85,9 @@ body {
 .lang-current {
   display: flex; align-items: center; gap: 6px;
   background: transparent;
-  border: 1px solid rgba(201,168,76,0.4);
+  border: none;
   border-radius: 2px;
-  padding: 7px 14px;
+  padding: 7px 10px;
   cursor: pointer;
   font-size: 0.75rem;
   letter-spacing: 1.5px;
@@ -96,7 +96,8 @@ body {
   transition: var(--transition);
   white-space: nowrap;
 }
-.lang-current:hover { border-color: var(--gold); color: var(--gold); }
+.lang-current:hover { color: var(--gold); }
+#langFlag { font-size: 1.4rem; line-height: 1; }
 .lang-arrow { font-size: 0.6rem; opacity: 0.6; transition: var(--transition); }
 .lang-dropdown {
   display: none; position: absolute; right: 0; top: calc(100% + 12px);
@@ -637,3 +638,6 @@ body {
   object-position: center center;
   background: #f5f0eb;
 }
+
+/* ── 语言切换器优化 v1.0.2 ── */
+.lang-option { font-size: 1rem; }
