@@ -2,7 +2,7 @@
 const LANG_FLAGS = { zh:'🇨🇳', en:'🇬🇧', vi:'🇻🇳', th:'🇹🇭', id:'🇮🇩', ms:'🇲🇾' };
 const LANG_NAMES = { zh:'中文', en:'English', vi:'Tiếng Việt', th:'ภาษาไทย', id:'Indonesia', ms:'Melayu' };
 
-let currentLang = localStorage.getItem('nexus_lang') || 'zh';
+let currentLang = localStorage.getItem('nexus_lang') || 'en';
 
 function switchLang(code) {
   if (!translations[code]) return;
