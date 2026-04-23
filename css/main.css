@@ -555,3 +555,36 @@ body {
   aspect-ratio: 4/5;
   display: block;
 }
+
+/* ── Hero 产品卡片 v2.2 — 文字移至图片下方 ── */
+.hero-product-card {
+  flex: 1; max-width: 240px;
+  display: flex; flex-direction: column;
+}
+.hero-product-card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 4px;
+}
+/* 移除旧的图片内覆盖标签 */
+.hero-product-label { display: none !important; }
+
+/* 图片下方文字区 */
+.hero-product-caption {
+  padding: 14px 4px 0;
+  text-align: center;
+}
+.hero-product-caption .prod-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem; font-weight: 300;
+  letter-spacing: 3px; color: var(--white);
+  display: block; margin-bottom: 5px;
+}
+.hero-product-caption .prod-tag {
+  font-size: 0.68rem; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--gold-light);
+  display: block;
+}
