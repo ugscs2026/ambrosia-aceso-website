@@ -171,3 +171,10 @@ body { font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; co
   .lang-current span:nth-child(2) { display: none; }
   .compare-table th, .compare-table td { padding: 12px 16px; font-size: 0.85rem; }
 }
+
+/* ── 产品图片 ── */
+.hero-product-img { width: 160px; height: 200px; object-fit: cover; border-radius: 12px; display: block; margin: 0 auto 12px; }
+.product-img { width: 100%; max-width: 320px; border-radius: 16px; box-shadow: var(--shadow); object-fit: cover; }
+.footer-both-img { width: 200px; border-radius: 8px; margin-bottom: 12px; }
+.ambrosia-section .product-brand,
+.aceso-section .product-brand { display: flex; align-items: center; justify-content: center; }
