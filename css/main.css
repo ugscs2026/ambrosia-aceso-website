@@ -631,3 +631,9 @@ body {
 @media (max-width: 768px) {
   .compare-hero-img img { max-height: 260px; }
 }
+
+/* ── Ambrosia Hero 图横向展示优化 ── */
+.hero-product-card:first-child img {
+  object-position: center center;
+  background: #f5f0eb;
+}
