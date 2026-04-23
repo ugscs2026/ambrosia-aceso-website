@@ -588,3 +588,26 @@ body {
   text-transform: uppercase; color: var(--gold-light);
   display: block;
 }
+
+/* ── Aceso 布局修正 — 图片在上，文字在下（手机优先）── */
+.aceso-layout {
+  grid-template-columns: 1fr 1fr;
+  direction: ltr;
+}
+.aceso-visual-top {
+  order: 1;
+}
+.aceso-layout .product-content {
+  order: 2;
+}
+/* 手机版：图片显示在文字上方 */
+@media (max-width: 1024px) {
+  .aceso-layout {
+    grid-template-columns: 1fr;
+  }
+  .aceso-visual-top {
+    order: -1; /* 图片强制在最上 */
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
