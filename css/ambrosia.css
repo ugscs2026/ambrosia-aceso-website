@@ -1,0 +1,13 @@
+/* Ambrosia 红色主题 */
+.ambrosia-section { background: var(--ambrosia-bg); }
+.ambrosia-circle { background: linear-gradient(135deg, #C0392B, #E74C3C); }
+.ambrosia-tag-badge { background: #fdecea; color: var(--ambrosia); border: 1px solid #f5b7b1; }
+.ambrosia-title { color: var(--ambrosia); border-color: var(--ambrosia); }
+.ambrosia-benefit { background: white; border-left: 4px solid var(--ambrosia); }
+.ambrosia-benefit h4 { color: var(--ambrosia); }
+.ambrosia-benefit p { color: var(--text-light); }
+.ambrosia-box { background: white; border-left: 4px solid var(--ambrosia); }
+.ambrosia-box h3 { color: var(--ambrosia); }
+.ambrosia-brand .brand-circle { background: linear-gradient(135deg, #C0392B, #922B21); }
+.product-intro h2 { color: var(--ambrosia); }
+.ambrosia-section .product-spec { color: var(--ambrosia); }

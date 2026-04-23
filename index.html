@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambrosia & Aceso — Natural Health Supplements</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ambrosia.css">
+  <link rel="stylesheet" href="css/aceso.css">
+</head>
+<body>
+
+<!-- ── 导航栏 ── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <span class="brand-ambrosia">A</span><span class="brand-aceso">A</span>
+      <span class="brand-text">Health</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-i18n="nav_home">首页</a></li>
+      <li><a href="#ambrosia" data-i18n="nav_ambrosia">Ambrosia</a></li>
+      <li><a href="#aceso" data-i18n="nav_aceso">Aceso</a></li>
+      <li><a href="#compare" data-i18n="nav_compare">产品对比</a></li>
+      <li><a href="#faq" data-i18n="nav_faq">常见问题</a></li>
+    </ul>
+    <!-- 语言切换器 -->
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-current" id="langCurrent">
+        <span id="langFlag">🇨🇳</span>
+        <span id="langLabel">中文</span>
+        <span class="lang-arrow">▾</span>
+      </button>
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-option active" data-lang="zh" onclick="switchLang('zh')">🇨🇳 中文</button>
+        <button class="lang-option" data-lang="en" onclick="switchLang('en')">🇬🇧 English</button>
+        <button class="lang-option" data-lang="vi" onclick="switchLang('vi')">🇻🇳 Tiếng Việt</button>
+        <button class="lang-option" data-lang="th" onclick="switchLang('th')">🇹🇭 ภาษาไทย</button>
+        <button class="lang-option" data-lang="id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+        <button class="lang-option" data-lang="ms" onclick="switchLang('ms')">🇲🇾 Melayu</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1 class="hero-title fade-in" data-i18n="hero_title">天然守护，健康生活</h1>
+    <p class="hero-subtitle fade-in" data-i18n="hero_subtitle">来自大自然的精华，为您的健康注入新活力</p>
+    <div class="hero-products fade-in">
+      <div class="hero-product ambrosia-card">
+        <div class="product-logo ambrosia-logo">
+          <div class="logo-icon">CM</div>
+          <div class="logo-text">Ambrosia<br><small>Chewable Tablet</small></div>
+        </div>
+        <span class="product-badge ambrosia-badge" data-i18n="ambrosia_tag">体重管理</span>
+      </div>
+      <div class="hero-product aceso-card">
+        <div class="product-logo aceso-logo">
+          <div class="logo-icon aceso-icon">aceso<br><small>tablet</small></div>
+        </div>
+        <span class="product-badge aceso-badge" data-i18n="aceso_tag">血糖控制</span>
+      </div>
+    </div>
+    <a href="#ambrosia" class="btn-hero" data-i18n="hero_cta">了解更多</a>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/></svg>
+  </div>
+</section>
+
+<!-- ── Ambrosia 产品详情 ── -->
+<section class="product-section ambrosia-section" id="ambrosia">
+  <div class="container">
+    <div class="product-header">
+      <div class="product-brand ambrosia-brand">
+        <div class="brand-circle ambrosia-circle">CM</div>
+      </div>
+      <div class="product-intro">
+        <span class="product-tag ambrosia-tag-badge" data-i18n="ambrosia_tag">体重管理</span>
+        <h2 data-i18n="ambrosia_name">Ambrosia 咀嚼片</h2>
+        <p class="product-subtitle" data-i18n="ambrosia_subtitle">天然可可配方，科学融合多种植物精华</p>
+        <p class="product-desc" data-i18n="ambrosia_desc">Ambrosia 咀嚼片采用天然可可为基底，融合非洲芒果籽提取物、绿茶精华及 Gymnema Sylvestre，帮助您科学管理体重，焕发自然活力。</p>
+        <p class="product-spec" data-i18n="ambrosia_spec">规格：每瓶30粒</p>
+      </div>
+    </div>
+
+    <!-- 成分 -->
+    <div class="section-block">
+      <h3 class="block-title ambrosia-title" data-i18n="ambrosia_ingredients_title">核心成分</h3>
+      <div class="ingredients-grid">
+        <div class="ingredient-card">
+          <div class="ing-icon">🍫</div>
+          <h4 data-i18n="ambrosia_ing1">可可粉</h4>
+          <p data-i18n="ambrosia_ing1_desc">天然基底，富含抗氧化物质</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🥭</div>
+          <h4 data-i18n="ambrosia_ing2">非洲芒果籽提取物</h4>
+          <p data-i18n="ambrosia_ing2_desc">促进脂肪代谢，辅助体重管理</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🍵</div>
+          <h4 data-i18n="ambrosia_ing3">绿茶提取物</h4>
+          <p data-i18n="ambrosia_ing3_desc">提升代谢，富含EGCG抗氧化成分</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🌿</div>
+          <h4 data-i18n="ambrosia_ing4">Gymnema Sylvestre</h4>
+          <p data-i18n="ambrosia_ing4_desc">抑制糖分吸收，支持血糖平衡</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 功效 -->
+    <div class="section-block">
+      <h3 class="block-title ambrosia-title" data-i18n="ambrosia_benefits_title">健康益处</h3>
+      <div class="benefits-grid">
+        <div class="benefit-card ambrosia-benefit">
+          <div class="benefit-icon">⚖️</div>
+          <h4 data-i18n="ambrosia_benefit1">体重管理</h4>
+          <p data-i18n="ambrosia_benefit1_desc">科学配方助力健康减重，抑制脂肪积聚</p>
+        </div>
+        <div class="benefit-card ambrosia-benefit">
+          <div class="benefit-icon">❤️</div>
+          <h4 data-i18n="ambrosia_benefit2">心血管健康</h4>
+          <p data-i18n="ambrosia_benefit2_desc">天然成分支持心脏与血管健康</p>
+        </div>
+        <div class="benefit-card ambrosia-benefit">
+          <div class="benefit-icon">🌱</div>
+          <h4 data-i18n="ambrosia_benefit3">消化健康</h4>
+          <p data-i18n="ambrosia_benefit3_desc">改善消化系统功能，促进肠道健康</p>
+        </div>
+        <div class="benefit-card ambrosia-benefit">
+          <div class="benefit-icon">⚡</div>
+          <h4 data-i18n="ambrosia_benefit4">能量活力</h4>
+          <p data-i18n="ambrosia_benefit4_desc">提升日常精力，让您充满活力</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用方法 & 适用人群 -->
+    <div class="usage-target-row">
+      <div class="usage-box ambrosia-box">
+        <h3 data-i18n="ambrosia_usage_title">使用方法</h3>
+        <p data-i18n="ambrosia_usage">每日1-2粒，咀嚼后吞服。建议饭前30分钟服用。多喝水以获得最佳效果。</p>
+      </div>
+      <div class="target-box ambrosia-box">
+        <h3 data-i18n="ambrosia_target_title">适用人群</h3>
+        <p class="target-list" data-i18n="ambrosia_target">• 希望科学管理体重者</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Aceso 产品详情 ── -->
+<section class="product-section aceso-section" id="aceso">
+  <div class="container">
+    <div class="product-header reverse">
+      <div class="product-intro">
+        <span class="product-tag aceso-tag-badge" data-i18n="aceso_tag">血糖控制</span>
+        <h2 data-i18n="aceso_name">Aceso 咀嚼片</h2>
+        <p class="product-subtitle" data-i18n="aceso_subtitle">科学控糖，轻松管理健康体重</p>
+        <p class="product-desc" data-i18n="aceso_desc">Aceso 咀嚼片以混合苹果汁粉末为基底，结合丝胶蛋白、绿茶提取物、肉桂提取物及 Gymnema Sylvestre，全面支持血糖管理与健康减重。</p>
+        <p class="product-spec" data-i18n="aceso_spec">规格：每瓶30粒</p>
+      </div>
+      <div class="product-brand aceso-brand">
+        <div class="brand-circle aceso-circle">aceso</div>
+      </div>
+    </div>
+
+    <!-- 成分 -->
+    <div class="section-block">
+      <h3 class="block-title aceso-title" data-i18n="aceso_ingredients_title">核心成分</h3>
+      <div class="ingredients-grid">
+        <div class="ingredient-card">
+          <div class="ing-icon">🍎</div>
+          <h4 data-i18n="aceso_ing1">混合苹果汁粉末</h4>
+          <p data-i18n="aceso_ing1_desc">天然苹果精华，富含果糖与营养素</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🧬</div>
+          <h4 data-i18n="aceso_ing2">丝胶蛋白</h4>
+          <p data-i18n="aceso_ing2_desc">维持皮肤弹性，支持胶原蛋白合成</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🌰</div>
+          <h4 data-i18n="aceso_ing3">肉桂提取物</h4>
+          <p data-i18n="aceso_ing3_desc">天然控糖成分，改善胰岛素敏感性</p>
+        </div>
+        <div class="ingredient-card">
+          <div class="ing-icon">🌿</div>
+          <h4 data-i18n="aceso_ing4">Gymnema Sylvestre</h4>
+          <p data-i18n="aceso_ing4_desc">减少糖分渴望，辅助长期血糖管理</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 功效 -->
+    <div class="section-block">
+      <h3 class="block-title aceso-title" data-i18n="aceso_benefits_title">健康益处</h3>
+      <div class="benefits-grid">
+        <div class="benefit-card aceso-benefit">
+          <div class="benefit-icon">🩸</div>
+          <h4 data-i18n="aceso_benefit1">血糖控制</h4>
+          <p data-i18n="aceso_benefit1_desc">科学配方帮助稳定血糖水平</p>
+        </div>
+        <div class="benefit-card aceso-benefit">
+          <div class="benefit-icon">🏃</div>
+          <h4 data-i18n="aceso_benefit2">健康减重</h4>
+          <p data-i18n="aceso_benefit2_desc">配合均衡饮食，有效管理体重</p>
+        </div>
+        <div class="benefit-card aceso-benefit">
+          <div class="benefit-icon">✨</div>
+          <h4 data-i18n="aceso_benefit3">抗衰老</h4>
+          <p data-i18n="aceso_benefit3_desc">丰富抗氧化成分，对抗自由基</p>
+        </div>
+        <div class="benefit-card aceso-benefit">
+          <div class="benefit-icon">💊</div>
+          <h4 data-i18n="aceso_benefit4">改善血脂</h4>
+          <p data-i18n="aceso_benefit4_desc">支持健康的胆固醇与血脂水平</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用方法 & 适用人群 -->
+    <div class="usage-target-row">
+      <div class="usage-box aceso-box">
+        <h3 data-i18n="aceso_usage_title">使用方法</h3>
+        <p data-i18n="aceso_usage">每日1-2粒，咀嚼后吞服。建议餐前服用效果更佳。保持充足水分摄入。</p>
+      </div>
+      <div class="target-box aceso-box">
+        <h3 data-i18n="aceso_target_title">适用人群</h3>
+        <p class="target-list" data-i18n="aceso_target">• 关注血糖健康者</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 产品对比 ── -->
+<section class="compare-section" id="compare">
+  <div class="container">
+    <h2 class="section-title" data-i18n="compare_title">产品对比</h2>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th data-i18n="compare_feature">功效特点</th>
+            <th class="ambrosia-col">
+              <div class="col-logo">CM</div>
+              Ambrosia
+            </th>
+            <th class="aceso-col">
+              <div class="col-logo aceso-col-logo">aceso</div>
+              Aceso
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-i18n="compare_main">主要功效</td>
+            <td><span class="check-icon">✓</span> <span data-i18n="ambrosia_tag">体重管理</span></td>
+            <td><span class="check-icon aceso-check">✓</span> <span data-i18n="aceso_tag">血糖控制</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="compare_taste">口味</td>
+            <td data-i18n="compare_ambrosia_taste">可可风味</td>
+            <td data-i18n="compare_aceso_taste">苹果风味</td>
+          </tr>
+          <tr>
+            <td data-i18n="compare_qty">每瓶数量</td>
+            <td data-i18n="compare_qty_val">30粒</td>
+            <td data-i18n="compare_qty_val">30粒</td>
+          </tr>
+          <tr>
+            <td data-i18n="compare_target">适用人群</td>
+            <td data-i18n="compare_ambrosia_target">体重管理、心血管健康</td>
+            <td data-i18n="compare_aceso_target">血糖控制、健康减重</td>
+          </tr>
+          <tr>
+            <td data-i18n="compare_ingredient">核心成分</td>
+            <td>可可、非洲芒果籽、绿茶</td>
+            <td>苹果汁、丝胶蛋白、肉桂</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="section-title" data-i18n="faq_title">常见问题</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span data-i18n="faq_q1">两款产品可以同时服用吗？</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">
+          <p data-i18n="faq_a1">可以。Ambrosia 和 Aceso 功效互补，可配合使用以获得更全面的健康支持。建议咨询医生或营养师。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span data-i18n="faq_q2">每天应该服用几粒？</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">
+          <p data-i18n="faq_a2">建议每天1-2粒。初次使用者可从每天1粒开始，适应后调整为每天2粒。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span data-i18n="faq_q3">这两款产品有副作用吗？</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">
+          <p data-i18n="faq_a3">本产品采用天然成分，一般人群耐受良好。若有特殊健康状况、正在服药或妊娠期，请先咨询医生。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span data-i18n="faq_q4">多久可以看到效果？</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">
+          <p data-i18n="faq_a4">个人体质有差异，配合健康饮食与适量运动，通常2-4周可感受到明显变化。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logos">
+          <span class="footer-logo ambrosia-logo-sm">CM</span>
+          <span class="footer-logo aceso-logo-sm">aceso</span>
+        </div>
+        <p data-i18n="footer_desc">天然配方，科学研制，为您的健康保驾护航。</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer_products">产品</h4>
+        <ul>
+          <li><a href="#ambrosia" data-i18n="nav_ambrosia">Ambrosia</a></li>
+          <li><a href="#aceso" data-i18n="nav_aceso">Aceso</a></li>
+          <li><a href="#compare" data-i18n="nav_compare">产品对比</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer" data-i18n="footer_disclaimer">* 本产品为保健食品，不可替代药物治疗。</p>
+      <p>© 2026 Ambrosia & Aceso. <span data-i18n="footer_rights">版权所有</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/lang-switch.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
